@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Your page title here :)</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Audio
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <audio id="audio" src="audio/zelda.mp3" preload="auto"></audio>
+
+    <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/pomodoro.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f898600fd4.js"
+      crossorigin="anonymous"
+      SameSite
+    ></script>
+  </head>
+  <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <h1 class="title" style="margin-top: 10%">Pomodoro Clock</h1>
+      <div class="card pomodoro" style="margin-top: 10%">
+        <h4 class="text">-</h4>
+        <p class="time">00:00</p>
+        <div class="card bg-main">
+          <div class="timer-buttons">
+            <button class="play"><i class="fas fa-play"></i></button>
+            <button class="stop"><i class="fas fa-stop"></i></button>
+            <button class="reset"><i class="fas fa-redo"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-lightaccent" style="margin-top: 20px">
+        <form>
+          Pomodoro:
+          <input
+            type="number"
+            name="pomodoroMins"
+            id="pomodoroMins"
+            min="00"
+            max="99"
+            value="25"
+          />
+          <input
+            type="number"
+            name="pomodoroSecs"
+            id="pomodoroSecs"
+            min="00"
+            max="59"
+            value="00"
+          />
+          Break:
+          <input
+            type="number"
+            name="breakMins"
+            id="breakMins"
+            min="00"
+            max="99"
+            value="05"
+          />
+          <input
+            type="number"
+            name="breakSecs"
+            id="breakSecs"
+            min="00"
+            max="59"
+            value="00"
+          />
+        </form>
+        <button class="save">Save</button>
+      </div>
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
